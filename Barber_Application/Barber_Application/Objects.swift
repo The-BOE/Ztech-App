@@ -428,6 +428,10 @@ extension View{
         )
     }
     
+    func customStyle(size: CGFloat, color: Color) -> some View{
+        self.font(.system(size: size))
+            .foregroundColor(color)
+    }
     
     @ViewBuilder
     func `if`<Content: View>(_ condition: Bool, modify: (Self) -> Content) -> some View {
@@ -507,11 +511,47 @@ struct clientData: Identifiable, Hashable{
     let joinLocation = "Sacramento CA"
 }
 
-var clientArray: [clientData] = [
-    clientData(name: "John Madden", username: "JMad4", made: 3, missed: 7),
-    clientData(name: "Philip Moore", username: "PMoore", made: 43, missed: 17),
-    clientData(name: "Kyle Alex ClydeDrexler", username: "Kyle_Drex", made: 13, missed: 7),
-    clientData(name: "Emwantaiwi Iyasere", username: "ZackxIyas", made: 321, missed: 7),
-    clientData(name: "John Madden", username: "JMad4", made: 0, missed: 0)
-]
+
+//Model data for confirmed Clients
+class ClientArrayModel: ObservableObject {
+    @Published var clientArray: [clientData] = [
+        clientData(name: "John Madden", username: "JMad4", made: 3, missed: 7),
+        clientData(name: "Philip Moore", username: "PMoore", made: 43, missed: 17),
+        clientData(name: "Kyle Alex ClydeDrexler", username: "Kyle_Drex", made: 13, missed: 7),
+        clientData(name: "Emwantaiwi Iyasere", username: "ZackxIyas", made: 321, missed: 7),
+        clientData(name: "John Madden", username: "JMad4", made: 0, missed: 0),
+        clientData(name: "John Madden", username: "JMad4", made: 3, missed: 7),
+        clientData(name: "Philip Moore", username: "PMoore", made: 43, missed: 17),
+//        clientData(name: "Kyle Alex ClydeDrexler", username: "Kyle_Drex", made: 13, missed: 7),
+//        clientData(name: "Emwantaiwi Iyasere", username: "ZackxIyas", made: 321, missed: 7),
+//        clientData(name: "John Madden", username: "JMad4", made: 0, missed: 0),
+//        clientData(name: "John Madden", username: "JMad4", made: 3, missed: 7),
+//        clientData(name: "Philip Moore", username: "PMoore", made: 43, missed: 17),
+//        clientData(name: "Kyle Alex ClydeDrexler", username: "Kyle_Drex", made: 13, missed: 7),
+//        clientData(name: "Emwantaiwi Iyasere", username: "ZackxIyas", made: 321, missed: 7),
+//        clientData(name: "John Madden", username: "JMad4", made: 0, missed: 0)
+    ]
+}
+
+//Model data for Pending clients
+class PendingArrayModel: ObservableObject {
+    @Published var pendingArray: [clientData] = [
+        clientData(name: "John Madden", username: "JMad4", made: 3, missed: 7),
+        clientData(name: "Philip Moore", username: "PMoore", made: 43, missed: 17),
+        clientData(name: "Kyle Alex ClydeDrexler", username: "Kyle_Drex", made: 13, missed: 7),
+        clientData(name: "Emwantaiwi Iyasere", username: "ZackxIyas", made: 321, missed: 7),
+        clientData(name: "John Madden", username: "JMad4", made: 0, missed: 0)//,
+//        clientData(name: "John Madden", username: "JMad4", made: 3, missed: 7),
+//        clientData(name: "Philip Moore", username: "PMoore", made: 43, missed: 17),
+//        clientData(name: "Kyle Alex ClydeDrexler", username: "Kyle_Drex", made: 13, missed: 7),
+//        clientData(name: "Emwantaiwi Iyasere", username: "ZackxIyas", made: 321, missed: 7),
+//        clientData(name: "John Madden", username: "JMad4", made: 0, missed: 0),
+//        clientData(name: "John Madden", username: "JMad4", made: 3, missed: 7),
+//        clientData(name: "Philip Moore", username: "PMoore", made: 43, missed: 17),
+//        clientData(name: "Kyle Alex ClydeDrexler", username: "Kyle_Drex", made: 13, missed: 7),
+//        clientData(name: "Emwantaiwi Iyasere", username: "ZackxIyas", made: 321, missed: 7),
+//        clientData(name: "John Madden", username: "JMad4", made: 0, missed: 0)
+    ]
+}
+
 

@@ -19,13 +19,20 @@ import SwiftUI
 @main
 struct BarberApp: App {
 //    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject private var pendingArrayModel = PendingArrayModel()
+    @StateObject private var clientArrayModel = ClientArrayModel()
     
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-//            sheetView()
-            BarberView()
+            BarberAppView()
+                .environmentObject(pendingArrayModel)
+                .environmentObject(clientArrayModel)
+////            UpcomingAppointment()
+                
 //            Login()
+//            clientListView()
+//            barber_calendarButton_View()
+//                .environmentObject(clientArrayModel)
         }
     }
 }

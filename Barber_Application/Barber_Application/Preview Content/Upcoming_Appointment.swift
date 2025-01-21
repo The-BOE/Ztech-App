@@ -303,7 +303,7 @@ struct barber_nextClientButton_View: View{
                     ImageAndText(text: "Return", image: "arrowshape.turn.up.backward.fill", size: 17, bold: false)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
                         .background(
-                            NavigationLink("", destination: BarberView().navigationBarBackButtonHidden(true))
+                            NavigationLink("", destination: BarberAppView().navigationBarBackButtonHidden(true))
                                 .opacity(0)
                         )
                     

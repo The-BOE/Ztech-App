@@ -3,26 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE094AA92BE62DF7001C37C5 /* BarberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094AA82BE62DF7001C37C5 /* BarberApp.swift */; };
 		CE094AAD2BE62DF8001C37C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE094AAC2BE62DF8001C37C5 /* Assets.xcassets */; };
 		CE094AB02BE62DF8001C37C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE094AAF2BE62DF8001C37C5 /* Preview Assets.xcassets */; };
-		CE094AED2BE62E12001C37C5 /* New_Account_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094AD72BE62E12001C37C5 /* New_Account_page.swift */; };
-		CE094AF32BE62E12001C37C5 /* Login Page Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094ADF2BE62E12001C37C5 /* Login Page Meta.swift */; };
-		CE094AF42BE62E12001C37C5 /* Login_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094AE02BE62E12001C37C5 /* Login_page.swift */; };
-		CE094AFB2BE62E12001C37C5 /* ZPLAYGROUND.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094AE72BE62E12001C37C5 /* ZPLAYGROUND.swift */; };
 		CE54898E2C05C05200EF0D89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE54898D2C05C05200EF0D89 /* GoogleService-Info.plist */; };
-		CE5489912C05C44D00EF0D89 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CE5489902C05C44D00EF0D89 /* FirebaseAuth */; };
-		CE5489932C05C44D00EF0D89 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE5489922C05C44D00EF0D89 /* FirebaseFirestore */; };
-		CEA5EBAA2BE6362D00E5CC96 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5EBA92BE6362D00E5CC96 /* Objects.swift */; };
-		CEFEF64C2CF47C0C005A38DD /* Barber_calendar_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF6472CF47C0C005A38DD /* Barber_calendar_page.swift */; };
-		CEFEF64D2CF47C0C005A38DD /* BarberApp_homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF6482CF47C0C005A38DD /* BarberApp_homepage.swift */; };
-		CEFEF64E2CF47C0C005A38DD /* BarberCalendar_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF6492CF47C0C005A38DD /* BarberCalendar_page.swift */; };
-		CEFEF64F2CF47C0C005A38DD /* ClientList_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF64A2CF47C0C005A38DD /* ClientList_page.swift */; };
-		CEFEF6502CF47C0C005A38DD /* NextClient_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF64B2CF47C0C005A38DD /* NextClient_page.swift */; };
+		CEB6A7882D0C051600C621DC /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5EBA92BE6362D00E5CC96 /* Objects.swift */; };
+		CEB6A7B62D400F0300C621DC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CE5489902C05C44D00EF0D89 /* FirebaseAuth */; };
+		CEB6A7B72D400F0300C621DC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE5489922C05C44D00EF0D89 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,31 +34,26 @@
 
 /* Begin PBXFileReference section */
 		CE094AA52BE62DF7001C37C5 /* Barber_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barber_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE094AA82BE62DF7001C37C5 /* BarberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberApp.swift; sourceTree = "<group>"; };
 		CE094AAC2BE62DF8001C37C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE094AAF2BE62DF8001C37C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE094AB52BE62DF8001C37C5 /* Barber_ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Barber_ApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE094ABF2BE62DF8001C37C5 /* Barber_ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Barber_ApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE094AD72BE62E12001C37C5 /* New_Account_page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = New_Account_page.swift; sourceTree = "<group>"; };
-		CE094ADF2BE62E12001C37C5 /* Login Page Meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Login Page Meta.swift"; sourceTree = "<group>"; };
-		CE094AE02BE62E12001C37C5 /* Login_page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login_page.swift; sourceTree = "<group>"; };
 		CE094AE72BE62E12001C37C5 /* ZPLAYGROUND.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPLAYGROUND.swift; sourceTree = "<group>"; };
 		CE54898D2C05C05200EF0D89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEA5EBA92BE6362D00E5CC96 /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
-		CEFEF6472CF47C0C005A38DD /* Barber_calendar_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barber_calendar_page.swift; sourceTree = "<group>"; };
-		CEFEF6482CF47C0C005A38DD /* BarberApp_homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberApp_homepage.swift; sourceTree = "<group>"; };
-		CEFEF6492CF47C0C005A38DD /* BarberCalendar_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberCalendar_page.swift; sourceTree = "<group>"; };
-		CEFEF64A2CF47C0C005A38DD /* ClientList_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientList_page.swift; sourceTree = "<group>"; };
-		CEFEF64B2CF47C0C005A38DD /* NextClient_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextClient_page.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CEB6A7BA2D4016F000C621DC /* Preview Content */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Preview Content"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CE094AA22BE62DF7001C37C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5489912C05C44D00EF0D89 /* FirebaseAuth in Frameworks */,
-				CE5489932C05C44D00EF0D89 /* FirebaseFirestore in Frameworks */,
+				CEB6A7B72D400F0300C621DC /* FirebaseFirestore in Frameworks */,
+				CEB6A7B62D400F0300C621DC /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,38 +95,14 @@
 		CE094AA72BE62DF7001C37C5 /* Barber_Application */ = {
 			isa = PBXGroup;
 			children = (
-				CE094AA82BE62DF7001C37C5 /* BarberApp.swift */,
+				CEB6A7BA2D4016F000C621DC /* Preview Content */,
 				CEA5EBA92BE6362D00E5CC96 /* Objects.swift */,
 				CE094AE72BE62E12001C37C5 /* ZPLAYGROUND.swift */,
 				CE54898D2C05C05200EF0D89 /* GoogleService-Info.plist */,
 				CE094AAC2BE62DF8001C37C5 /* Assets.xcassets */,
-				CE094AAE2BE62DF8001C37C5 /* Preview Content */,
-				CEFEF6472CF47C0C005A38DD /* Barber_calendar_page.swift */,
-				CEFEF6482CF47C0C005A38DD /* BarberApp_homepage.swift */,
-				CEFEF6492CF47C0C005A38DD /* BarberCalendar_page.swift */,
-				CEFEF64A2CF47C0C005A38DD /* ClientList_page.swift */,
-				CEFEF64B2CF47C0C005A38DD /* NextClient_page.swift */,
-				CE094AD92BE62E12001C37C5 /* Login_Page */,
 				CE094AAF2BE62DF8001C37C5 /* Preview Assets.xcassets */,
 			);
 			path = Barber_Application;
-			sourceTree = "<group>";
-		};
-		CE094AAE2BE62DF8001C37C5 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		CE094AD92BE62E12001C37C5 /* Login_Page */ = {
-			isa = PBXGroup;
-			children = (
-				CE094AD72BE62E12001C37C5 /* New_Account_page.swift */,
-				CE094AE02BE62E12001C37C5 /* Login_page.swift */,
-				CE094ADF2BE62E12001C37C5 /* Login Page Meta.swift */,
-			);
-			path = Login_Page;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +119,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CEB6A7BA2D4016F000C621DC /* Preview Content */,
 			);
 			name = Barber_Application;
 			packageProductDependencies = (
@@ -282,17 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE094AF42BE62E12001C37C5 /* Login_page.swift in Sources */,
-				CEA5EBAA2BE6362D00E5CC96 /* Objects.swift in Sources */,
-				CE094AFB2BE62E12001C37C5 /* ZPLAYGROUND.swift in Sources */,
-				CE094AF32BE62E12001C37C5 /* Login Page Meta.swift in Sources */,
-				CE094AED2BE62E12001C37C5 /* New_Account_page.swift in Sources */,
-				CEFEF64C2CF47C0C005A38DD /* Barber_calendar_page.swift in Sources */,
-				CEFEF64D2CF47C0C005A38DD /* BarberApp_homepage.swift in Sources */,
-				CEFEF64E2CF47C0C005A38DD /* BarberCalendar_page.swift in Sources */,
-				CEFEF64F2CF47C0C005A38DD /* ClientList_page.swift in Sources */,
-				CEFEF6502CF47C0C005A38DD /* NextClient_page.swift in Sources */,
-				CE094AA92BE62DF7001C37C5 /* BarberApp.swift in Sources */,
+				CEB6A7882D0C051600C621DC /* Objects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
