@@ -246,6 +246,7 @@ struct clientView: View {
                     }
                 }header:{
                     Text("Appointments")
+                        .foregroundColor(.white)
                 }
 //                .listSectionSpacing(0)
                 
@@ -331,6 +332,7 @@ struct clientView: View {
                     
                 } header: {
                     Text("History")
+                        .foregroundColor(.white)
                 }
             }
             .scrollIndicators(.hidden)
