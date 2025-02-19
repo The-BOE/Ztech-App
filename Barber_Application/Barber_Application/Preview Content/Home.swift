@@ -195,22 +195,21 @@ struct NextAppointment_Section: View{
                     nextAppointment = nil
                 }
             }
-            .swipeActions(edge: .leading){
-                Button(role: .destructive){
-                    if let index = clientArrayModel.clientArray.firstIndex(of: nextAppointment!) {
-                        clientArrayModel.clientArray.remove(at: index)
-                    }
-                    if clientArrayModel.clientArray.first != nil{
-                        nextAppointment = clientArrayModel.clientArray.first
-                    }
-                }label:{
-                    Image(systemName: "circle.slash")
-                        .font(.system(size: 15))
-                        .foregroundColor(.white)
-                        .bold()
-                }
-                .tint(.red)
-            }
+ // Update
+.swipeActions(edge: .leading) {
+    Button(role: .destructive) {
+        if let index = clientArrayModel.clientArray.firstIndex(of: nextAppointment!) {
+            cancelAppointment(appointment: clientArrayModel.clientArray[index], isPending: false)
+        }
+    } label: {
+        Image(systemName: "circle.slash")
+            .font(.system(size: 15))
+            .foregroundColor(.white)
+            .bold()
+    }
+    .tint(.red)
+}
+
 
             .swipeActions(edge: .trailing){
                 Button{}label:{
@@ -237,6 +236,20 @@ struct UpcomingAppointments_Section: View{
     @EnvironmentObject var clientArrayModel: ClientArrayModel
     @State private var showApp = false
     let s = ["Approved", "Pending"]
+
+    // Update
+    func cancelAppointment(appointment: clientData, isPending: Bool) {
+    if isPending {
+        if let index = pendingArrayModel.pendingArray.firstIndex(of: appointment) {
+            pendingArrayModel.pendingArray.remove(at: index)
+        }
+    } else {
+        if let index = clientArrayModel.clientArray.firstIndex(of: appointment) {
+            clientArrayModel.clientArray.remove(at: index)
+        }
+    }
+}
+
     
     var body: some View{
         
@@ -375,11 +388,16 @@ struct UpcomingAppointments_Section: View{
                             }
                             .tint(.yellow)
                         }
-                        .swipeActions(edge: .leading){
-                            Button{}label:{
-                                Image(systemName: "circle.slash")
-                            }
-                        }
+ // Update
+.swipeActions(edge: .leading) {
+    Button(role: .destructive) {
+        cancelAppointment(appointment: client, isPending: pendOrApp == "Pending")
+    } label: {
+        Image(systemName: "circle.slash")
+    }
+    .tint(.red)
+}
+
                         
                     }
                     .id(clientArrayModel.clientArray)

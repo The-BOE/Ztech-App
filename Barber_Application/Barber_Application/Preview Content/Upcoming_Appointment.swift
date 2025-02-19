@@ -278,13 +278,17 @@ struct barber_nextClientButton_View: View{
                 
                 
                 
-                
-                Section{
-                    Text("Cancel Appointment")
-                        .modifier(CustomTextModifier(size: 15, color: .red))
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
-                }
-                .listSectionSpacing(.custom(20))
+// Update
+Section {
+    Text("Cancel Appointment")
+        .modifier(CustomTextModifier(size: 15, color: .red))
+        .frame(maxWidth: .infinity, alignment: .center)
+        .onTapGesture {
+            cancelAppointment(appointment: clientData, isPending: false)
+        }
+}
+.listSectionSpacing(.custom(20))
+
                 
                 
                 

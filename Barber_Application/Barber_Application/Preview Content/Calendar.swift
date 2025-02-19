@@ -119,35 +119,42 @@ struct barber_calendarButton_View: View{
                         
                         
                         var clientArray = clientArrayModel.clientArray
-                        ForEach(clientArray, id: \.self) { client in
-                            HStack {
-                                Rectangle()
-                                    .fill(.green)
-                                    .frame(width:4)
-                                
-                                
-                                HStack {
-                                    VStack(alignment: .leading) {
-                                        Text("\(client.name)")
-                                            .modifier(CustomTextModifier(size: 15, color: .white))
-                                        
-                                        Text("4:30 PM")
-                                            .modifier(CustomTextModifier(size: 15, color: .white))
-                                    }
-                                    .padding(.leading)
-                                    .padding([.top, .bottom], 10)
-                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                                    
-                                    
-                                    Text("$30")
-                                        .padding(.trailing)
-                                    
-                                }
-                                .background(Color.gray.opacity(0.2))
-                                .cornerRadius(8)
-                                
-                            }
-                        }
+// Update
+ForEach(clientArray, id: \.self) { client in
+    HStack {
+        Rectangle()
+            .fill(.green)
+            .frame(width:4)
+
+        HStack {
+            VStack(alignment: .leading) {
+                Text("\(client.name)")
+                    .modifier(CustomTextModifier(size: 15, color: .white))
+
+                Text("4:30 PM")
+                    .modifier(CustomTextModifier(size: 15, color: .white))
+            }
+            .padding(.leading)
+            .padding([.top, .bottom], 10)
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+            Text("$30")
+                .padding(.trailing)
+        }
+        .background(Color.gray.opacity(0.2))
+        .cornerRadius(8)
+    }
+    .swipeActions(edge: .leading) {
+        Button(role: .destructive) {
+            cancelAppointment(appointment: client, isPending: false)
+        } label: {
+            Image(systemName: "trash")
+        }
+        .tint(.red)
+    }
+}
+
+
                     }
                     
                 }
