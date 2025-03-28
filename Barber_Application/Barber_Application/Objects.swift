@@ -554,4 +554,15 @@ class PendingArrayModel: ObservableObject {
     ]
 }
 
+// MARK: Swipe Trigger Functions (Temporary placeholder for backend call)
+
+// Placeholder function to simulate updating price
+func updatePriceLocally (_ newPrice: Int) {
+    print("Swipe action triggereed. Intended to update price to : \(newPrice)")
+    // TODO: Replace with API call to update price in DynamoDB
+}
+
+
+
+
 
